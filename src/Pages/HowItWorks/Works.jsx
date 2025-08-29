@@ -75,7 +75,7 @@ const Works = () => {
             
             <div className={styles.stepContent}>
               <div className={styles.stepImage}>
-                <img src={step.image} alt={step.title} />
+                <img src={step.image} alt={step.title} className={styles.zoomedImage} />
               </div>
               <h3>{step.title}</h3>
               <p>{step.description}</p>
@@ -89,21 +89,21 @@ const Works = () => {
         <div className={styles.benefitsGrid}>
           <div className={styles.benefitCard}>
             <div className={styles.benefitIcon}>
-              <img src={checkmarkImg} alt="Checkmark" />
+              <img src={checkmarkImg} alt="Checkmark" className={styles.zoomedIcon} />
             </div>
             <h3>Never Miss Expiry Dates</h3>
             <p>Get smart alerts before your medicines expire</p>
           </div>
           <div className={styles.benefitCard}>
             <div className={styles.benefitIcon}>
-              <img src={recycleImg} alt="Recycle" />
+              <img src={recycleImg} alt="Recycle" className={styles.zoomedIcon} />
             </div>
             <h3>Reduce Medical Waste</h3>
             <p>Donate instead of discarding unused medicines</p>
           </div>
           <div className={styles.benefitCard}>
             <div className={styles.benefitIcon}>
-              <img src={communityImg} alt="Community" />
+              <img src={communityImg} alt="Community" className={styles.zoomedIcon} />
             </div>
             <h3>Help Your Community</h3>
             <p>Your donations provide essential medication to those in need</p>
