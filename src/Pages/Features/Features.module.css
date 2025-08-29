@@ -1,0 +1,266 @@
+/* Base Styles */
+.featuresPage {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* Hero Section */
+.heroSection {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+/* Features Grid */
+.featuresSection {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.featureCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.featureIconContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.featureIcon {
+  font-size: 2.25rem;
+  color: #2563eb;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: #2c3e50;
+}
+
+.featureDescription {
+  color: #4b5563;
+  text-align: center;
+}
+
+/* Section Title Styles */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e40af;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+}
+
+/* Process Section */
+.processSection {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.processSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.processStep {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border-top: 4px solid #2563eb;
+}
+
+.stepNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stepTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.stepDescription {
+  color: #4b5563;
+  font-size: 0.9375rem;
+}
+
+/* Why Donate Section */
+.whyDonateSection {
+  padding: 4rem 1.5rem;
+  background-color: #eff6ff;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+.benefitCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.benefitTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.75rem;
+}
+
+/* Accepted Medicines Section */
+.acceptedSection {
+  padding: 4rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.medicineTypes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.medicineType {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.medicineType h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 0.5rem;
+}
+
+.medicineType ul {
+  padding-left: 1.25rem;
+  color: #4b5563;
+}
+
+.medicineType li {
+  margin-bottom: 0.5rem;
+}
+
+.noteBox {
+  background-color: #fef2f2;
+  border-left: 4px solid #dc2626;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.noteBox h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #dc2626;
+  margin-bottom: 0.5rem;
+}
+
+.noteBox p {
+  color: #4b5563;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 1.875rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .processSteps {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+}

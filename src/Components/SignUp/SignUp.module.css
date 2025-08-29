@@ -1,0 +1,381 @@
+/* Base Styles */
+.signupContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+.signupHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.signupHeader h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.signupHeader p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+/* Progress Steps */
+.progressSteps {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  max-width: 120px;
+}
+
+.step span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  border: 3px solid #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+.step p {
+  font-size: 0.85rem;
+  color: #95a5a6;
+  text-align: center;
+  margin: 0;
+}
+
+.step.active span {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.step.active p {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* User Type Selector */
+.userTypeSelector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.typeBtn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #dfe6e9;
+  background: white;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #636e72;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.typeBtn:hover {
+  border-color: #b2bec3;
+}
+
+.typeBtn.active {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.typeBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Form Styles */
+.signupForm {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1f2f6;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="email"],
+.formGroup input[type="tel"],
+.formGroup input[type="password"],
+.formGroup input[type="url"],
+.formGroup input[type="date"],
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.formGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* File Input Styling */
+.formGroup input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px dashed #b2bec3;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.formGroup input[type="file"]::file-selector-button {
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background 0.3s ease;
+}
+
+.formGroup input[type="file"]::file-selector-button:hover {
+  background: #2980b9;
+}
+
+/* Checkbox Styling */
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxGroup input {
+  margin-right: 0.75rem;
+  width: 18px;
+  height: 18px;
+  accent-color: #3498db;
+}
+
+.checkboxGroup label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.checkboxGroup a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.checkboxGroup a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nextBtn,
+.submitBtn,
+.backBtn,
+.resendBtn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.nextBtn,
+.submitBtn {
+  background: #3498db;
+  color: white;
+  flex: 1;
+}
+
+.nextBtn:hover,
+.submitBtn:hover {
+  background: #2980b9;
+}
+
+.backBtn {
+  background: #f1f2f6;
+  color: #636e72;
+  flex: 1;
+}
+
+.backBtn:hover {
+  background: #dfe6e9;
+}
+
+.resendBtn {
+  background: none;
+  color: #3498db;
+  padding: 0;
+  font-weight: 600;
+}
+
+.resendBtn:hover {
+  text-decoration: underline;
+}
+
+/* OTP Container */
+.otpContainer {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.otpContainer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.otpContainer p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.otpActions {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.otpTimer {
+  color: #95a5a6;
+}
+
+/* Error Styling */
+.error {
+  display: block;
+  margin-top: 0.5rem;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.submitError {
+  background: #fadbd8;
+  color: #e74c3c;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Login Link */
+.loginLink {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.loginLink a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .signupHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .progressSteps {
+    gap: 0.5rem;
+  }
+
+  .step p {
+    font-size: 0.75rem;
+  }
+
+  .userTypeSelector {
+    flex-direction: column;
+  }
+
+  .signupForm {
+    padding: 1.5rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .signupContainer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .progressSteps {
+    flex-wrap: wrap;
+  }
+
+  .step {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+
+  .formGroup input[type="file"]::file-selector-button {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+  }
+}

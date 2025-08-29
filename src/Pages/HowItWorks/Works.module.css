@@ -1,0 +1,261 @@
+/* Works.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #2d3748;
+}
+
+.highlight {
+  color: #4c6ef5;
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(76, 110, 245, 0.2);
+  z-index: -1;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Roadmap Styles */
+.roadmap {
+  position: relative;
+  margin: 60px 0;
+  padding: 0 20px;
+}
+
+.roadmapLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: linear-gradient(to bottom, #4c6ef5, #a5d8ff);
+  z-index: 1;
+}
+
+.roadmapStep {
+  position: relative;
+  display: flex;
+  margin-bottom: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.roadmapStep:nth-child(odd) {
+  flex-direction: row;
+}
+
+.roadmapStep:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.roadmapStep.active .stepMarker {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 8px rgba(76, 110, 245, 0.2);
+}
+
+.stepMarker {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #4c6ef5;
+  z-index: 3;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.stepNumber {
+  font-weight: 700;
+  color: #4c6ef5;
+  font-size: 1.2rem;
+}
+
+.stepContent {
+  flex: 1;
+  padding: 0 40px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.stepImage {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.stepImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.stepContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #2d3748;
+}
+
+.stepContent p {
+  color: #718096;
+  line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #2d3748;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.benefitCard {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.benefitIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f7ff;
+  border-radius: 50%;
+}
+
+.benefitIcon img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.benefitCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #2d3748;
+}
+
+.benefitCard p {
+  color: #718096;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background: linear-gradient(135deg, #4c6ef5 0%, #3b5bdb 100%);
+  padding: 60px 40px;
+  border-radius: 24px;
+  color: white;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  background: white;
+  color: #4c6ef5;
+  border: none;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .roadmapLine {
+    left: 30px;
+  }
+  
+  .roadmapStep {
+    flex-direction: row !important;
+    margin-bottom: 60px;
+  }
+  
+  .stepContent {
+    padding: 0 20px 0 60px;
+    text-align: left;
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+}
