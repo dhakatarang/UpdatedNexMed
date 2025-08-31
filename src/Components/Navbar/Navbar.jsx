@@ -19,9 +19,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Features', path: '/features' },
-    { name: 'How It Works', path: '/howItWorks' },
-    { name: 'Donate', path: '/donate' }, // Updated to match the route in App.js
+    { name: 'Donate', path: '/donate' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -50,7 +48,7 @@ const Navbar = () => {
             </li>
           ))}
           <li className={styles.navItem}>
-            <Link to="/login" className={styles.loginButton}>
+            <Link to="/login" className={styles.loginButton} onClick={() => setIsMenuOpen(false)}>
               <FaUser className={styles.loginIcon} />
               <span>Login</span>
             </Link>
@@ -62,3 +60,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

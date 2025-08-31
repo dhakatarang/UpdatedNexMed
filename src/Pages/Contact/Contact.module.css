@@ -1,0 +1,387 @@
+/* src/components/Contact.module.css */
+.contactPage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 50vh;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2a7de1;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #5a6b7c;
+  margin-bottom: 2rem;
+}
+
+.heroVisual {
+  flex: 1;
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.communicationGraphic {
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(135deg, #2a7de1 0%, #4caf50 100%);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.communicationGraphic::before,
+.communicationGraphic::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.communicationGraphic::before {
+  width: 80px;
+  height: 80px;
+  top: 30px;
+  left: 40px;
+  opacity: 0.7;
+}
+
+.communicationGraphic::after {
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  opacity: 0.7;
+}
+
+/* Contact Methods Section */
+.contactMethods {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.headerLine {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #2a7de1, #4caf50);
+  margin: 0 auto;
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.methodCard {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.methodCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.methodIcon {
+  width: 70px;
+  height: 70px;
+  background: #e8f4ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+  color: #2a7de1;
+  font-size: 1.8rem;
+}
+
+.methodCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.methodCard p {
+  color: #5a6b7c;
+  margin-bottom: 0.5rem;
+}
+
+.methodCard a, .methodCard address {
+  color: #2a7de1;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.methodCard a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contactFormSection {
+  display: flex;
+  padding: 5rem 2rem;
+  background: #f8f9fa;
+}
+
+.formContainer {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 3rem;
+}
+
+.formIntro h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.formIntro p {
+  color: #5a6b7c;
+  margin-bottom: 2rem;
+}
+
+.contactForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.formRow {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2a7de1;
+  box-shadow: 0 0 0 2px rgba(42, 125, 225, 0.2);
+}
+
+.submitButton {
+  background: #2a7de1;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
+  width: 100%;
+}
+
+.submitButton:hover {
+  background: #1c68c5;
+}
+
+.formGraphic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supportIllustration {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, #2a7de1, #4caf50);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.supportIllustration::before,
+.supportIllustration::after {
+  content: '';
+  position: absolute;
+  background: white;
+}
+
+.supportIllustration::before {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 60px;
+  left: 70px;
+  opacity: 0.8;
+}
+
+.supportIllustration::after {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  bottom: 70px;
+  left: 75px;
+  opacity: 0.8;
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.faqItem h3 {
+  font-size: 1.2rem;
+  color: #2a7de1;
+  margin-bottom: 1rem;
+}
+
+.faqItem p {
+  color: #5a6b7c;
+}
+
+/* Map Section */
+.mapSection {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.mapSection h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.mapContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 400px;
+  background: #e9ecef;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapPlaceholder {
+  text-align: center;
+  color: #5a6b7c;
+}
+
+.mapPlaceholder i {
+  font-size: 4rem;
+  color: #2a7de1;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  
+  .contactFormSection {
+    flex-direction: column;
+  }
+  
+  .formContainer {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+  
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+  
+  .methodsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+}

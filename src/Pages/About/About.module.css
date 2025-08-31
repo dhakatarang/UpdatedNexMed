@@ -1,0 +1,381 @@
+/* src/components/About.module.css */
+.aboutPage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 70vh;
+}
+
+.heroContent {
+  flex: 1;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2a7de1;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  color: #5a6b7c;
+  margin-bottom: 2rem;
+}
+
+.heroVisual {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleAnimation {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: conic-gradient(#2a7de1, #4caf50, #ff9800, #2a7de1);
+  position: relative;
+  animation: rotate 10s linear infinite;
+}
+
+.circleAnimation::before {
+  content: '';
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background: white;
+  top: 15px;
+  left: 15px;
+}
+
+.pillShape {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  background: #2a7de1;
+  border-radius: 30px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.heartbeatLine {
+  position: absolute;
+  bottom: 50px;
+  width: 300px;
+  height: 40px;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 10px,
+      #ff6b6b 10px,
+      #ff6b6b 12px
+    );
+  border-radius: 5px;
+  animation: pulse 2s infinite;
+}
+
+/* Mission Section */
+.missionSection {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.headerLine {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #2a7de1, #4caf50);
+  margin: 0 auto;
+}
+
+.missionContent {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.missionText {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.missionText p {
+  margin-bottom: 1.5rem;
+}
+
+.missionGraphic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circularGraphic {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.circleItem {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  animation: pulse 2s infinite;
+}
+
+.circleItem:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2a7de1;
+}
+
+.circleItem:nth-child(2) {
+  bottom: 30px;
+  left: 20px;
+  color: #4caf50;
+}
+
+.circleItem:nth-child(3) {
+  bottom: 30px;
+  right: 20px;
+  color: #ff9800;
+}
+
+.circleItem i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Features Section */
+.featuresSection {
+  padding: 5rem 2rem;
+  background: #f8f9fa;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.featureIcon {
+  width: 70px;
+  height: 70px;
+  background: #e8f4ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+  color: #2a7de1;
+  font-size: 1.8rem;
+}
+
+.featureCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Stats Section */
+.statsSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2a7de1 0%, #4caf50 100%);
+  color: white;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statItem {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.statItem h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: #5a6b7c;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.primaryBtn {
+  background: #2a7de1;
+  color: white;
+  border: none;
+}
+
+.primaryBtn:hover {
+  background: #1c68c5;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(42, 125, 225, 0.3);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: #2a7de1;
+  border: 2px solid #2a7de1;
+}
+
+.secondaryBtn:hover {
+  background: #f0f7ff;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  
+  .missionContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .statsContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+  
+  .featureCard {
+    padding: 1.5rem;
+  }
+  
+  .circularGraphic {
+    transform: scale(0.8);
+  }
+}
